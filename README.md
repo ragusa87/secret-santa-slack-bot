@@ -24,8 +24,7 @@ Why ?
 
 3. Put your token in the .env
 4. Go on slack and create a new user group
-5. Find the created group id (by inspectring the query or via api)
-6. Edit your .env to update the GROUP_ID
+5. Edit your .env to update the GROUP_NAME
 
 ## Usage
 1. Import .env `export $(cat .env)`
@@ -34,7 +33,7 @@ Why ?
 
 ## .env file
 ```
-## Environment variables
-`SLACK_API_TOKEN`: your slack bot access token - Required.
-`GROUP_NAME`: Your group name - Required.
-`CHANNEL_NAME`: the name of your secret santa channel - Optional. Default: secret-santa
+SLACK_API_TOKEN: your slack bot access token - Required.
+GROUP_NAME: Your group name - Required (You can use GROUP_ID if you want to go faster)
+CHANNEL_NAME: the name of your secret santa channel - (You can use CHANNEL_ID if you want to go faster)
+```
